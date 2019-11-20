@@ -1,6 +1,6 @@
 import React from 'react';
 import { Route, Link } from 'react-router-dom';
-// import Note from './components/Note';
+import Note from './Note';
 import Folder from './Folder';
 
 class Main extends React.Component {
@@ -17,7 +17,11 @@ class Main extends React.Component {
                        <Folder />
                 </section>
                     <section className='main-column'>
-                        main
+                        <Note />
+                        <Note />
+                        <Note />
+                        <Note />
+                        <Note />
                     </section>
                    
                 </main>
