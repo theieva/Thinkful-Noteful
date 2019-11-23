@@ -6,6 +6,7 @@ import DynamicFolder from './components/DynamicRoute';
 import Store from './Store';
 import Header from './components/Header';
 import Sidebar from './components/Sidebar';
+import Router from './Router';
 
 class App extends React.Component {
     state = { 
@@ -21,10 +22,7 @@ class App extends React.Component {
       <div id='main-container'>
       <Sidebar />
       <Main>
-          <Route exact path ="/" component={Main} />
-          <Route exact path ="/DynamicRoute" component={DynamicRoute} />
-          <Route exact path ="/DynamicFolder" component={DynamicFolder} /> 
-
+         <Router />
         </Main>
       </div>
       
